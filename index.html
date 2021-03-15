@@ -33,11 +33,20 @@
             }
         }
 
+        async function addPictutre() {
+            let myArray2 = "FEHLER! Es gibt einen Fehler. Bitte starten sie ihren Browser neu";
+            console.log(myArray1);
+            for (let i = 0; i < myArray2.length; i = i + 1) {
+                document.getElementById("alles").innerHTML += myArray2[i];
+                await delay(50);
+            }
+        }
+
 
     </script>
 </head>
 
-<body id="alles" onload="addText()">
+<body id="alles" onload="addText()" onclick="addPicture()">
     <div class="popup bg-dark p-2">
         <h1>Feedback</h1>
         <p>wie findest du die Seite?</p>
