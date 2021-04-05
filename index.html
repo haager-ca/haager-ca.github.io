@@ -9,6 +9,17 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <style>
+        .headerImg {
+            background-size: cover;
+            background-image: url("header_Img.jpg");
+            height: 100vh;
+        }
+
+        .headerImg h1 {
+            padding-top: 20vh;
+        }
+
+
         .popup {
             position: fixed;
             right: 5px;
@@ -24,20 +35,22 @@
 
         }
 
-        async function addText() {
-            let myArray1 = "Hallo Fremder, Super, dass du gekommen bist. Ich bin der Autovervollständiger dieser Seite! Dein Browser ist zu schlecht! Deshalb habe ich mich eingemischt, und diese Seite vervollstandigt. Aber keine Sorge, der Chef (der Programmierer) dieser Seite hat mich entwickelt. Ich behersche ein wenig KI, denn ich habe diese Seite etwas umgelstaltet. Oh, ich muss los! Ich hoffe wir sehen uns nochmal. Zur Info, ich wurde am 26.2.2021 um programmiert  Ich bin kein Virus und wenn schon, ich würde deine Daten eh nur an: Apple, Google und Microsoft verkaufen.(-; VG XXX Aus Datenschutzrechtlichen Gründen, nenne ich meinen echten Namen nicht. Der in der URL ist natürlich auch fake. Aber ich bin mir sicher es gibt ihn in echt(-;";
-            console.log(myArray1);
-            for (let i = 0; i < myArray1.length; i = i + 1) {
-                document.getElementById("alles").innerHTML += myArray1[i];
+        async function adddPicture() {
+            let myArray3 = <link class="nav-link" herf="auto2.html"> </link>;
+            let myArray = "Hallo Fremder, Super, dass du gekommen bist. Ich bin der Autovervollständiger dieser Seite! Dein Browser ist zu schlecht! Deshalb habe ich mich eingemischt, und diese Seite vervollstandigt. Aber keine Sorge, der Chef (der Programmierer) dieser Seite hat mich entwickelt. Ich behersche ein wenig KI, denn ich habe diese Seite etwas umgelstaltet. Oh, ich muss los! Ich hoffe wir sehen uns nochmal. Zur Info, ich wurde am 26.2.2021 um programmiert  Ich bin kein Virus und wenn schon, ich würde deine Daten eh nur an: Apple, Google und Microsoft verkaufen.(-; VG XXX Aus Datenschutzrechtlichen Gründen, nenne ich meinen echten Namen nicht. Der in der URL ist natürlich auch fake. Aber ich bin mir sicher es gibt ihn in echt(-;";
+            console.log(myArray);
+            for (let i = 0; i < myArray.length; i = i + 1) {
+                document.getElementById("alles").innerHTML += myArray[i];
                 await delay(50);
             }
+            document.getElementById("alles").innerHTML += myArray3[i];
         }
 
-        async function addPictutre() {
-            let myArray2 = "FEHLER! Es gibt einen Fehler. Bitte starten sie ihren Browser neu";
+        async function addText() {
+            let myArray1 = "Wer kennt ihn nicht, das berühmte Genie der Renaisance. Er war Künstler, Ingenieur, Erfinder, Schriftsteller, Anatom gleichzeitig. Viele in der dahmaliegen Zeit betrachteten ihn als Gottes lästerer.";
             console.log(myArray1);
-            for (let i = 0; i < myArray2.length; i = i + 1) {
-                document.getElementById("alles").innerHTML += myArray2[i];
+            for (let i = 0; i < myArray1.length; i = i + 1) {
+                document.getElementById("Information").innerHTML += myArray1[i];
                 await delay(50);
             }
         }
@@ -46,7 +59,14 @@
     </script>
 </head>
 
-<body id="alles" onload="addText()" onclick="addPicture()">
+<body id="Information" onload="addText()">
+    <div class="container-fluit p-0  headerImg">
+        <h1 class=" text-dark font-weight-bold text-center">Leonardo da Vinci</h1>
+        <h5 class="text-dark font-weight-bold text-center">(eigentlich: Leonardo di ser Piero da Vinci)</h5>
+        <p class="text-center text-dark font-weight-bold"> <br>Wer kennt ihn nicht, das berühmte Genie der Renaisance.
+            Er war Künstler, Ingenieur, Erfinder, Schriftsteller,
+            Anatom gleichzeitig. Viele in der dahmaliegen Zeit betrachteten ihn als Gottes lästerer.</p>
+    </div>
     <div class="popup bg-dark p-2">
         <h1>Feedback</h1>
         <p>wie findest du die Seite?</p>
@@ -56,7 +76,7 @@
     </div>
     <script>
         document.getElementById("submitBtn").addEventListener("click", function () {
-            alert("Hi " + document.getElementById("nameInput").value + " wie findest du den Autoverfolständiger?")
+            alert("Hi " + document.getElementById("nameInput").value + " wie findest du die Seite?")
         })
     </script>
 </body>
